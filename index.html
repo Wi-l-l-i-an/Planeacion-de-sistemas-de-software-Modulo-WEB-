@@ -1,0 +1,38 @@
+<!--A00840101, Willian Salomon Lemus Sanchez, Tarea Login HTML-->
+
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+</head>
+
+<!-- Se creo una clase Login, donde se definen los inputs para el Usuario, Contraseña y el boton de Inicio de sesion, 
+ al presionar el boton se llama a la fucion login() donde se verifica el usuario y contraseña -->
+<body>
+    <div class="Login">
+         <h1>Login</h1>
+         <input type="text" id="usuario-correo" placeholder="Usuario/Correo">
+         <input type="password" id="contraseña" placeholder="Contraseña">
+         <button type="button" onclick="login()">Iniciar Sesion</button>
+     </div>
+    
+    
+    <!-- Se creo la funcion login() en java Script, la cual verifica el usuario y contraseña
+     esta implementada de una manera simple ya que funciona con un usuario y contraseña default y no estan protegidos. -->
+    <script>
+        function login() {
+            const usuarioCorreo = document.getElementById('usuario-correo').value;
+            const contraseña = document.getElementById('contraseña').value;
+
+            if (usuarioCorreo === 'admin' && contraseña === '1234') {
+                window.location.href = "gato.html";
+            } else {
+                alert('Usuario o contraseña incorrectos.');
+            }
+        }
+    </script>
+</html>
+
