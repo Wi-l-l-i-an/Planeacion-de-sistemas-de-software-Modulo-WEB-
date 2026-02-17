@@ -1,0 +1,42 @@
+<!--A00840101, Willian Salomon Lemus Sanchez, Tarea Login HTML-->
+
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+</head>
+
+<!-- Se creo una clase Login, donde se definen los inputs para el Usuario, Contraseña y el boton de Inicio de sesion, 
+ al presionar el boton se llama a la fucion login() donde se verifica el usuario y contraseña -->
+<body>
+    <header>
+        <h1>Mi Aplicación</h1>
+        <nav>
+            <a href="index.html">Login</a>
+            <a href="register.html">Registrarse</a>
+        </nav>
+    </header>
+
+    <div class="Login">
+         <h1>Login</h1>
+         <input type="text" id="usuario-correo" placeholder="Usuario/Correo">
+         <input type="password" id="contraseña" placeholder="Contraseña">
+
+         <button type="button" onclick="login()">Iniciar Sesion</button>
+         
+         <button type="button" onclick="goToRegister()" class="secondary"> Crear Cuenta </button>
+
+         <p id="mensaje"></p>
+     </div>
+
+    <footer>
+        <p>&copy; Mi App - A00840101 - Willian Salomon Lemus Sanchez.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
