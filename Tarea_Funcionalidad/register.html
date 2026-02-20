@@ -1,0 +1,37 @@
+<!--A00840101, Willian Salomon Lemus Sanchez-->
+
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<!-- Se creo una clase Register, donde se definen los inputs para el Usuario, Contraseña y el boton de Crear Cuenta, 
+ al presionar el boton se llama a la fucion createAccount() donde se verifica si el usuario ya existe o no -->
+<body>
+    <header>
+        <h1>Mi Aplicación</h1>
+        <nav>
+            <a href="index.html">Login</a>
+            <a href="register.html">Registrarse</a>
+        </nav>
+    </header>
+
+    <div class="Register">
+         <h2>Register</h2>
+         <input type="text" id="NewUsuario" placeholder="Nuevo Usuario">
+            <input type="password" id="NewContraseña" placeholder="Nueva Contraseña">
+            <input type="password" id="NewConfirmContraseña" placeholder="Confirmar Contraseña">
+            <button type="button" onclick="createAccount()">Crear Cuenta</button>
+         <p id="mensaje"></p>
+     </div>
+
+    <footer>
+        <p>&copy; Mi App - A00840101 - Willian Salomon Lemus Sanchez.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/*A00840101, Willian Salomon Lemus Sanchez*/
+
+/* Para el body se le modifico el font de las letras y se le agrego un color de fondo,
+tambien se le agrego el modificador de display para centrar el contenido verticalmente */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #007BFF;
+}
+
+/* Footer estilo */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    margin-bottom: autos;
+}
+
+footer p {
+    margin: 10;
+}
+
+/* Para la clase gato se le modifico el color de fondo, el color de las letras, 
+el padding, el ancho y se le agrego un borde redondeado */
+.gato {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 25rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 5rem auto;
+}
+
+/* Para la imagen dentro de la clase gato se le modifico el ancho, alto, 
+borde redondeado y margen inferior */
+.gato img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 20%;
+    margin-bottom: 2.5rem;
+}
+
+.extra1 {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 25rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 5rem auto;
+}
+
+.extra1 img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 20%;
+    margin-bottom: 2.5rem;
+}
+
+.extra2 {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 25rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 5rem auto;
+}
+
+.extra2 img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 20%;
+    margin-bottom: 2.5rem;
+}
+
+/* Para la clase Login se le modifico el color de fondo, el color de las letras, 
+el padding, el ancho y se le agrego un borde redondeado */
+.Login {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 10rem auto;
+    flex-direction: row;
+}
+
+.Login h1 {
+    margin-bottom: 1rem;
+    font-family: Georgia, serif;
+    scale: 1.5;
+}
+
+/* Para el input de texto y contraseña dentro de la clase Login se le modifico el ancho, padding, margen y borde */
+.Login input[type="text"],.Login input[type="password"] {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4rem;
+}
+
+/* Para el botn de inicio de sesion se le agrego el modificador de cursor
+ para que cuando el pointer de el mouse pase sobre el este cambie*/
+.Login button {
+    width: 60%;
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.Register {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 10rem auto;
+    flex-direction: row;
+}
+
+.Register input[type="text"],.Register input[type="password"] {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4rem;
+}
+
+.Register button {
+    width: 60%;
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
