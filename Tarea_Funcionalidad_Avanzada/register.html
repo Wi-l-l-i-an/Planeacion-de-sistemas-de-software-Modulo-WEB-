@@ -1,0 +1,27 @@
+<!--A00840101, Willian Salomon Lemus Sanchez-->
+
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<!-- Se creo una clase Register, donde se definen los inputs para el Usuario, Contraseña y el boton de Crear Cuenta, 
+ al presionar el boton se llama a la fucion createAccount() donde se verifica si el usuario ya existe o no -->
+<body>
+
+    <div class="Register">
+         <h2>Register</h2>
+         <input type="text" id="NewUsuario" placeholder="Nuevo Usuario">
+            <input type="password" id="NewContraseña" placeholder="Nueva Contraseña">
+            <input type="password" id="NewConfirmContraseña" placeholder="Confirmar Contraseña">
+            <button type="button" onclick="createAccount()">Crear Cuenta</button>
+         <p id="mensaje"></p>
+     </div>
+
+    <script src="script.js"></script>
+    <script>initializePageLayout('register');</script>
+</body>
+</html>
