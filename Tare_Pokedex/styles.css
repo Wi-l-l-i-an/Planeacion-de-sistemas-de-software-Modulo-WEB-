@@ -1,0 +1,388 @@
+/*A00840101, Willian Salomon Lemus Sanchez*/
+
+/* Para el body se le modifico el font de las letras y se le agrego un color de fondo,
+tambien se le agrego el modificador de display para centrar el contenido verticalmente */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #007BFF;
+}
+
+/* Footer estilo */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+    margin-bottom: autos;
+}
+
+footer p {
+    margin: 10;
+}
+
+/* Para la clase gato se le modifico el color de fondo, el color de las letras, 
+el padding, el ancho y se le agrego un borde redondeado */
+.gato {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 25rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 5rem auto;
+}
+
+/* Para la imagen dentro de la clase gato se le modifico el ancho, alto, 
+borde redondeado y margen inferior */
+.gato img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 20%;
+    margin-bottom: 2.5rem;
+}
+
+/* Estilos para Poke-API */
+.Poke-API {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 5rem auto;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.Poke-API img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 20%;
+    margin-bottom: 2.5rem;
+}
+
+.extra2 {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 25rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 5rem auto;
+}
+
+.extra2 img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 20%;
+    margin-bottom: 2.5rem;
+}
+
+/* Para la clase Login se le modifico el color de fondo, el color de las letras, 
+el padding, el ancho y se le agrego un borde redondeado */
+.Login {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 10rem auto;
+    flex-direction: row;
+}
+
+.Login h1 {
+    margin-bottom: 1rem;
+    font-family: Georgia, serif;
+    scale: 1.5;
+}
+
+/* Para el input de texto y contraseña dentro de la clase Login se le modifico el ancho, padding, margen y borde */
+.Login input[type="text"],.Login input[type="password"] {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4rem;
+}
+
+/* Para el botn de inicio de sesion se le agrego el modificador de cursor
+ para que cuando el pointer de el mouse pase sobre el este cambie*/
+.Login button {
+    width: 60%;
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.Register {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 10rem auto;
+    flex-direction: row;
+}
+
+.Register input[type="text"],.Register input[type="password"] {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4rem;
+}
+
+.Register button {
+    width: 60%;
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pokemon-card {
+    background-color: #5b9b2e;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.pokemon-card h3 {
+    margin: 0.5rem 0;
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0.5rem 0;
+}
+
+.pokemon-id {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.pokemon-types {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.pokemon-info {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.pokemon-info p {
+    margin: 0.3rem 0;
+}
+
+.pokemon-stats {
+    margin-top: 0.5rem;
+    border-top: 1px solid #666;
+    padding-top: 0.5rem;
+}
+
+.stat {
+    margin: 0.2rem 0;
+    font-size: 0.8rem;
+}
+
+.filters input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 180px;
+}
+
+.filters button {
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 0 0.25rem;
+}
+
+.filters button:hover {
+    background-color: #0056b3;
+}
+
+.load-more-container {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.load-more-container button {
+    padding: 0.75rem 1.5rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.load-more-container button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+.load-more-container button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.extra2 {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 25rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 5rem auto;
+}
+
+.extra2 img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 20%;
+    margin-bottom: 2.5rem;
+}
+
+/* Para la clase Login se le modifico el color de fondo, el color de las letras, 
+el padding, el ancho y se le agrego un borde redondeado */
+.Login {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 10rem auto;
+    flex-direction: row;
+}
+
+.Login h1 {
+    margin-bottom: 1rem;
+    font-family: Georgia, serif;
+    scale: 1.5;
+}
+
+/* Para el input de texto y contraseña dentro de la clase Login se le modifico el ancho, padding, margen y borde */
+.Login input[type="text"],.Login input[type="password"] {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4rem;
+}
+
+/* Para el botn de inicio de sesion se le agrego el modificador de cursor
+ para que cuando el pointer de el mouse pase sobre el este cambie*/
+.Login button {
+    width: 60%;
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.Register {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 10rem auto;
+    flex-direction: row;
+}
+
+.Register input[type="text"],.Register input[type="password"] {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4rem;
+}
+
+.Register button {
+    width: 60%;
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
