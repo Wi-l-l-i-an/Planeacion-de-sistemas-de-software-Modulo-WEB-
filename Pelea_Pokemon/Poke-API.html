@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke-API</title>
+</head>
+
+<!-- Se creo una clase Poke-API, donde se define el contenido de la paginas extra que se puedan ver con el header-->
+<body data-protected="true">
+
+    <div class="Poke-API">
+        <h1>Pokedex</h1>
+
+        <div class="battle">
+            <h2>Batalla Pokémon</h2>
+            <div class="battle-selectors">
+                <div class="pokemon-selector">
+                    <label for="battle-pokemon-1">Pokémon 1</label>
+                    <select id="battle-pokemon-1"></select>
+                    <div id="pokemon-1-image" class="pokemon-preview"></div>
+                </div>
+                <div class="pokemon-selector">
+                    <label for="battle-pokemon-2">Pokémon 2</label>
+                    <select id="battle-pokemon-2"></select>
+                    <div id="pokemon-2-image" class="pokemon-preview"></div>
+                </div>
+            </div>
+            <button id="start-battle-btn" onclick="startBattle()">Iniciar Batalla</button>
+            <div id="battle-result" class="battle-result"></div>
+            <div id="battle-log" class="battle-log">Seleccione dos pokémon y presione "Iniciar Batalla".</div>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="filter-name" placeholder="Filtrar por nombre">
+            <input type="number" id="filter-id" placeholder="Filtrar por ID">
+            <input type="text" id="filter-type" placeholder="Filtrar por tipo">
+            <button id="apply-filters-btn" onclick="applyFilters()">Aplicar Filtros</button>
+            <button id="clear-filters-btn" onclick="clearFilters()">Limpiar Filtros</button>
+        </div>
+        <div id="pokemon-container">Cargando...</div>
+        <div class="load-more-container">
+            <button id="load-more-btn" onclick="loadMorePokemon()">Cargar más Pokémon</button>
+        </div>
+     </div>
+
+    <script src="script.js"></script>
+    <script>initializePageLayout('Poke-API');</script>
+    <script>if (typeof loadPokeAPI === 'function') loadPokeAPI();</script>
+</body>
+</html>
